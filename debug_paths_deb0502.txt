@@ -1,0 +1,2 @@
+/root/lab/panda/deadwriteBenchmark/dead_array_test/a.out
+/root/lab/panda/images/debian_wheezy_amd64/vmlinux-3.2.0-4-amd64
