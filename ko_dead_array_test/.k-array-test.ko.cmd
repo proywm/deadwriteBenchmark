@@ -1,0 +1,1 @@
+cmd_/root/deadwriteBenchmark/ko_dead_array_test/k-array-test.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.2.0-4-common/scripts/module-common.lds --build-id  -o /root/deadwriteBenchmark/ko_dead_array_test/k-array-test.ko /root/deadwriteBenchmark/ko_dead_array_test/k-array-test.o /root/deadwriteBenchmark/ko_dead_array_test/k-array-test.mod.o

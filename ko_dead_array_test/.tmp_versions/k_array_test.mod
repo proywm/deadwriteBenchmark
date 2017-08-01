@@ -1,0 +1,2 @@
+/root/deadwriteBenchmark/ko_dead_array_test/k_array_test.ko
+/root/deadwriteBenchmark/ko_dead_array_test/k_array_test.o
