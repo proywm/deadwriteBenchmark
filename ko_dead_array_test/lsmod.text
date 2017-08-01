@@ -1,0 +1,42 @@
+Module                  Size  Used by
+k_array_test           12475  0 
+nfsd                  216052  2 
+nfs                   308353  0 
+nfs_acl                12511  2 nfs,nfsd
+auth_rpcgss            37185  2 nfs,nfsd
+fscache                36739  1 nfs
+lockd                  67306  2 nfs,nfsd
+sunrpc                173736  6 lockd,auth_rpcgss,nfs_acl,nfs,nfsd
+loop                   22634  0 
+parport_pc             22364  0 
+parport                31858  1 parport_pc
+processor              28149  0 
+thermal_sys            18040  1 processor
+snd_pcm                68083  0 
+snd_page_alloc         13003  1 snd_pcm
+snd_timer              22970  1 snd_pcm
+snd                    52893  2 snd_timer,snd_pcm
+soundcore              13065  1 snd
+i2c_piix4              12536  0 
+container              12581  0 
+evdev                  17562  2 
+psmouse                69322  0 
+i2c_core               23876  1 i2c_piix4
+serio_raw              12931  0 
+pcspkr                 12579  0 
+button                 12937  0 
+ext4                  355097  1 
+crc16                  12343  1 ext4
+jbd2                   62412  1 ext4
+mbcache                13082  1 ext4
+sg                     25874  0 
+sr_mod                 21899  0 
+sd_mod                 36187  3 
+cdrom                  35401  1 sr_mod
+crc_t10dif             12348  1 sd_mod
+ata_generic            12479  0 
+floppy                 53134  0 
+ata_piix               29535  2 
+libata                140721  2 ata_piix,ata_generic
+scsi_mod              162321  4 libata,sd_mod,sr_mod,sg
+e1000                  86209  0 
