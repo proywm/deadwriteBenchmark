@@ -1,1 +1,1 @@
-/root/lab/panda/deadwriteBenchmark/dead_array_test/array_test_deb7
+userspace:/root/lab/panda/deadwriteBenchmark/dead_array_test/array_test_deb7
