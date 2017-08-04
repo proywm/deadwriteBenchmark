@@ -10,29 +10,22 @@
 dead_compute01:
 
 This is used to create deadwrite/killing writes
-
 in two for loops.
 
 - given an array int *a and its size, write
-
   new values to every a[i] in two for loops.
-
   Between two for loops, do some reading in a.
-
-- int *a
-- int size
-
 */
 
 int dead_compute01( int *a, int size){
 
    int j=0 ;
    long count=0;
-
+   
    for (j=0; j<size*3; j++){
-
+   
 	int i, tmp=0;
-
+	
 	// first loop to write a[i]s.
 	for (i = 0; i<size; i++){
 		a[i] = i*i-tmp;
@@ -49,29 +42,21 @@ int dead_compute01( int *a, int size){
 		a[i] = i*i/2 - 1;
                 tmp = tmp + 2*i -200;
 	}
-
 	count += tmp * 2 - tmp / 3;
 
-    }
-	return 0;
+  }
+  return 0;
 }
 
 /*
 dead_compute02:
 
 This is used to create deadwrite/killing writes
-
 in two for loops. Similar to dead_compute01, but
-
 with no read between two write loops.
 
 - given an array int *a and its size, write
-
   new values to every a[i] in two for loops.
-
-- int *a
-- int size
-
 */
 
 int dead_compute02( int *a, int size){
@@ -80,9 +65,9 @@ int dead_compute02( int *a, int size){
    long count=0;
 
    for (j=0; j<size*3; j++){
-
+   
 	int i, tmp=0;
-
+	
 	// first loop to write a[i]s.
 	for (i = 0; i<size; i++){
 		a[i] = i*i-tmp;
@@ -97,8 +82,8 @@ int dead_compute02( int *a, int size){
 
 	count += tmp * 2 - tmp / 3;
 
-    }
-	return 0;
+  }
+  return 0;
 }
 
 
@@ -118,7 +103,7 @@ static int __init k_array_test_init(void)
 	printk(KERN_INFO "Starting k_array_test with deadwrites\n");
 
 	dead_compute01( a, size);
-
+	
 	dead_compute02( b, size);
 
 	for (i = size-1; i>=0; i--){
@@ -140,15 +125,4 @@ static void __exit k_array_test_cleanup(void)
 
 module_init(k_array_test_init);
 module_exit(k_array_test_cleanup);
-
-//int init_module(void){
-//	printk(KERN_INFO "HELLO WORLD!\n");
-//
-//	return 0;
-//}
-
-//void cleanup_module(void)
-//{
-//	printk(KERN_INFO "Goodbye from k_array_test.\n");
-//}
 
