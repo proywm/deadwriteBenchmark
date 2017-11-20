@@ -1,3 +1,4 @@
 kernelspace:/root/deadwriteBenchmark/ko_dead_array_test/k_array_test.ko
 offset:0xffffffffa01c0000
 size:12475
+sysmap:/root/out-panda/images/debian_wheezy_amd64/System.map-3.2.0-4-amd64
